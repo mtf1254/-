@@ -1,0 +1,232 @@
+@charset "utf-8";
+/************************************************* global *************************************************/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {width:100%; height:100%; font:12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;}
+
+img{
+	border: none;
+}
+ul,ol {
+		padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+}
+a:hover a{
+	color: #66c5ff!important;
+}
+/*清除浮动的*/
+.clearfix:before,
+.clearfix:after
+{
+	content:"";
+	display:table;
+}
+.clearfix:after
+{
+	clear:both;
+}
+.clearfix
+{
+	zoom:1;
+}
+/*以上为公共样式 勿删*/
+
+
+.clearfix:after { content:''; display:block; clear:both; }
+.clearfix { zoom:1; }
+
+.head{
+	width:1200px;
+	margin: 0 auto;
+	height:110px;
+}
+.pcc-chao-head {
+	width: 263px;
+	height: 80px;
+	float: left;
+}
+
+.pcc-chao-logo {
+	display: inline-block;
+	/*margin: 20px 0 0 40px;*/
+	width: 100%;
+	height: 60px;
+	padding-top:20px;
+	/*background: url(../img/logo.jpg) no-repeat;*/
+}
+.pcc-chao-logo img{
+	width:100%;
+
+}
+
+/*400电话*/
+
+.tel {
+	float: right;
+	height: 70px;
+	display: inline-block;
+	margin: 25px 11px 0 0;
+	line-height: 25px;
+	font-size: 18px;
+	color: #66c5ff;
+	text-align: right;
+	z-index: -99999;
+}
+.tel li font{
+	color:#333333;
+	line-height: 25px;
+}
+
+/*搜索框输入框*/
+
+.input {
+	display: inline-block;
+	margin: 28px 10px 0 0;
+	width: 230px;
+	height: 45px;
+	float: right;
+	/*border: 1px solid red;*/
+}
+
+.text {
+	width: 170px;
+	height: 43px;
+	float: left;
+	border: 1px solid #aaaaaa;
+	font-size: 16px;
+	padding-left: 10px;
+}
+
+.but {
+	width: 45px;
+	height: 43px;
+	display: block;
+	background: #007bc7;
+	cursor: pointer;
+	border: none;
+}
+.float{
+	float: right;
+	/*width: 580px;*/
+}
+
+.pcc-xialaone-span {
+	width: 73px;
+	height: 20px;
+	color:#333333 !important;
+	padding: 1px 2px 5px 0px;
+	z-index: 99;
+	background-color: #FFFFFF;
+}
+
+
+.PCC-CLASS a{
+	color: #333333 !important;
+}
+.PCC-CLASS:hover .pcc-xialaone-span {
+	border-bottom: 1px solid black;
+}
+
+.pcc-xialaone-xiala span:hover {
+	background: #66C5FF;
+}
+
+.pcc-xialaone-xiala {
+	z-index: 99;
+	position: absolute;
+	background: #fff;
+	width: 467px;
+	height: 30px !important;
+	border: 1px solid #e3e3e3;
+	/*border-top: none;*/
+	margin-top: 2px;
+	display: none;
+	z-index: 99;
+	color: #333333 !important;
+}
+
+.pcc-xialaone-xiala>span {
+	width: 44px;
+	float: left;
+	padding: 2px 5px;
+	z-index: 99;
+	font-size: 14px;
+	text-align: center;
+}
+
+
+
+/*导航*/
+.nav{
+	width:100%;
+	background: #E3E3E3;
+	height:50px;
+	z-index: 1000;
+}
+.navmin{
+	width:1200px;
+	margin: 0 auto;
+	height:50px;
+	border:1px solid transparent;
+}
+.navmin ul .flip{
+	z-index: 1000;
+    float: left;
+    width: 12.5%;
+    height: 50px;
+    word-break: keep-all;
+    white-space: nowrap;
+    line-height: 50px;
+    text-align: center;
+    background: #e3e3e3;
+}
+
+.navmin ul .nav-a{
+	position: relative;
+    z-index: 1000;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    display: block;
+}
+.navmin ul .flip:nth-of-type(1){
+	background: #66C5FF;
+}
+.navmin ul .flip:nth-of-type(1) .nav-a{
+	color:white;
+}
+.navmin ul .flip:hover{
+	background: #66C5FF;
+}
+.navmin ul .flip:hover .hover{
+	display: block;
+}
+.navmin ul .flip:hover .nav-a{
+	color:white;
+}
+.navmin ul .hover{
+	background: #777880;
+	width:100%;
+	display: none;
+}
+.navmin ul .hover li{
+	height:40px;
+	line-height: 40px;
+}
+.navmin ul .hover li:hover .hover1{
+	color:#66C5FF;
+}
+.navmin ul .hover a{
+	color: white;
+	font-size:14px;
+}
