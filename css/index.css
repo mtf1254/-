@@ -78,7 +78,6 @@ a:hover a{
 	font-size: 18px;
 	color: #66c5ff;
 	text-align: right;
-	z-index: -99999;
 }
 .tel li font{
 	color:#333333;
@@ -123,7 +122,6 @@ a:hover a{
 	height: 20px;
 	color:#333333 !important;
 	padding: 1px 2px 5px 0px;
-	z-index: 99;
 	background-color: #FFFFFF;
 }
 
@@ -140,7 +138,6 @@ a:hover a{
 }
 
 .pcc-xialaone-xiala {
-	z-index: 99;
 	position: absolute;
 	background: #fff;
 	width: 467px;
@@ -149,7 +146,6 @@ a:hover a{
 	/*border-top: none;*/
 	margin-top: 2px;
 	display: none;
-	z-index: 99;
 	color: #333333 !important;
 }
 
@@ -157,7 +153,6 @@ a:hover a{
 	width: 44px;
 	float: left;
 	padding: 2px 5px;
-	z-index: 99;
 	font-size: 14px;
 	text-align: center;
 }
@@ -169,16 +164,18 @@ a:hover a{
 	width:100%;
 	background: #E3E3E3;
 	height:50px;
-	z-index: 1000;
+	position: relative;
+	z-index: 2;
 }
 .navmin{
 	width:1200px;
 	margin: 0 auto;
 	height:50px;
 	border:1px solid transparent;
+	z-index: 1;
 }
 .navmin ul .flip{
-	z-index: 1000;
+	z-index: 2;
     float: left;
     width: 12.5%;
     height: 50px;
@@ -191,7 +188,6 @@ a:hover a{
 
 .navmin ul .nav-a{
 	position: relative;
-    z-index: 1000;
     height: 50px;
     line-height: 50px;
     font-size: 16px;
@@ -215,11 +211,13 @@ a:hover a{
 	color:white;
 }
 .navmin ul .hover{
+	z-index: 2;
 	background: #777880;
 	width:100%;
 	display: none;
 }
 .navmin ul .hover li{
+	z-index: 2;
 	height:40px;
 	line-height: 40px;
 }
@@ -229,4 +227,60 @@ a:hover a{
 .navmin ul .hover a{
 	color: white;
 	font-size:14px;
+}
+
+/*轮播*/
+
+.lbhover{
+	background: #66C5FF;
+}
+
+.lbbox {
+	width: 100%;
+}
+.lunbo{
+	position: relative;
+}
+.lunbo li{
+	position: absolute;
+	width:auto;
+	height:auto;
+	text-align: center;
+	
+}
+.lunbo li a{
+	display: block;
+}
+.lunbo li:nth-child(1){
+	z-index: 5;
+}
+.lunbo li:nth-child(2){
+	z-index: 4;
+}
+.lunbo li:nth-child(3){
+	z-index: 3;
+}
+.lunbo li:nth-child(4){
+	z-index: 2;
+}
+.lunbo li:nth-child(5){
+	z-index: 1;
+}
+.lunbo li img{
+	width:100%;
+}
+
+.lunbobtn{
+	position: absolute;
+    bottom: 25px;
+    left: 46.6789%;
+    z-index: 10;
+}
+.lunbobtn li{
+	float: left;
+	margin-left: 10px;
+	width:15px;
+	height:15px;
+	background: black;
+	border-radius: 50%;
 }

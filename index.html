@@ -219,21 +219,62 @@
 	
 	<!--导航结束-->
 	
-	
-	
-	
+	<!--轮播-->
+		<div class="lbbox">
+			<ul class="lunbo">
+				<li>
+					<a href="#">
+						<img src="img/lunbo1.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/lunbo2.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/lunbo3.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/lunbo4.png" alt="" />
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/lunbo5.png" alt="" />
+					</a>
+				</li>
+			</ul>
+			<ul class="lunbobtn">
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+				<li><a href="#"></a></li>
+			</ul>
+		</div>
+	<!--轮播结束-->
 	<script type="text/javascript" src="js/jquery-1.10.1.js"></script>
+	<script type="text/javascript" src="js/style.js"></script>
 </body>
 <script>
 	$(function(){
-		$("#diquname").mouseover(function(){
+		$("#diquname").mouseenter(function(){
 			$('.pcc-xialaone-xiala').css('display','block')
 			$("#diquname").css('border','1px solid #e3e3e3')
+		})
+		$(".pcc-xialaone").mouseleave(function(){
+			$('.pcc-xialaone-xiala').css('display','none')
+			$("#diquname").css('border','none')
 		})
 		$(".pcc-xialaone-xiala").mouseleave(function(){
 			$('.pcc-xialaone-xiala').css('display','none')
 			$("#diquname").css('border','none')
 		})
+		
 	})
 </script>
 </html>
